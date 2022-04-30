@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>Profile</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Styles.CSS">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="Personal Details.html" class="w3-bar-item w3-button">Personal Details</a>
+  <a href="Education.htmlp" class="w3-bar-item w3-button">Education</a>
+  <a href="Skills & Interests.html" class="w3-bar-item w3-button">Skills & Interests</a>
+  <a href="Strength & Weaknesses.html" class="w3-bar-item w3-button">Strength & Weaknesses</a>
+  <a href="Hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+</div>
+
+<div id="main"></div>
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+ <img src="Chill With The Big Boys.jpg" alt="image" style="width:100%">
+
+ <section>
+  <div class="profile">
+  <h3>Profile</h3>
+  <h4></h4>
+  <p>I am a Hardworking and Responsible young man who is very enthusiastic and active when it comes Voluntary work. I can efficiently adapt to various organizational set ups, with sence of responsibility. In High School, I was a member of the Representative Council of Learners(RCL), which thought and guided me on how to lead and work in groups. In this, i highly believe in teamwork in order to archieve organizational aims.</p>
+  </div>
+
+<div class="profile">
+  <h3>objective</h3>
+  <h4></h4>
+  <p>My Goal is to gain as much knowledge and skills in order for me to be able to pursue my dream of being a Software Developer. I look forward to using my natural skills and the knowledge that i have in order to work in this industry. </p>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
+

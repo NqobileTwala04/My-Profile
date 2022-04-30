@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Styles.CSS">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="Home Page.html" class="w3-bar-item w3-button">Home Page</a>
+  <a href="Personal Details.html" class="w3-bar-item w3-button">Personal Details</a>
+  <a href="Education.html" class="w3-bar-item w3-button">School Archievements</a>
+  <a href="Strength & Weaknesses.html" class="w3-bar-item w3-button">Strength & Weaknesses</a>
+  <a href="Hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+</div>
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<div class="profile">
+    <h3>Skills and Interests</h3>
+    <h4></h4>
+</div>
+
+<img src="Skills and Interests.png" alt="image" style="width:100%">
+<script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+</script>
+
+<style>
+  .profile h3{
+    letter-spacing: 10px ;
+  }
+  @media screen and (max-width: 100%) {
+      .profile h3 {
+        width: 200%;
+      }
+      .image {
+        width: 300%
+      }
+    }
+    
+    @media screen and (max-width: 100%) {
+      .profile h3 {
+        width: 200%;
+      }
+      .image {
+        width: 700%
+      }
+    }
+</style>
+
+</body>
+</html>

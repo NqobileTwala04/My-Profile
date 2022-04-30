@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Styles.CSS">
+ </head>
+<body>
+    
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large"
+      onclick="w3_close()">Close &times;</button>
+      <a href="Home Page.html" class="w3-bar-item w3-button">Home Page</a>
+      <a href="Personal Details.html" class="w3-bar-item w3-button">Personal Details</a>
+      <a href="Skills & Interests.html" class="w3-bar-item w3-button">Skills & Interests</a>
+      <a href="Strength & Weaknesses.html" class="w3-bar-item w3-button">Strength & Weaknesses</a>
+      <a href="Hobbies.html" class="w3-bar-item w3-button">Hobbies</a> 
+    </div>
+    
+    <div id="main"></div>
+    
+    <div class="w3-teal">
+      <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+      <div class="w3-container">
+        <h1>My Page</h1>
+      </div>
+    </div>
+<div class="row">
+  <div class="column" >
+    <h3>&#128218; Task Academy Private School [2010 - 2016].</h3>
+  <h4></h4>
+  <p>
+      <h5>Grade 3</h5>
+      - Top Archiever in Life Skills.<br>
+      - Second Highest Learner in Mathematics.<br><br>
+      <h5>Grade 4</h5>
+      - Second Highest Learner in Life Skills & English.<br>
+      - Third Highest Learner in Mathematics.<br><br>
+      <h5>Grade 5</h5>
+      -Top Archiever in Mathematics & Life Skills.<br>
+      -Second Highest Learner in English.<br>
+      -Third Highest Learner in Natural Science and Technology.<br><br>
+      <h5>Grade 6</h5>
+      - Second Highest Learner in English.<br>
+      - Third Highest Learner in Natural Science and Technology.<br><br>
+      <h5>Grade 7</h5>
+      - Achievement in Maintaining Excellence.<br>
+      - Top Archiever in Natural Science.<br>
+      - Second Highest Learner in Techonology, life Orientation & English.<br>
+      - Part of the Top 5 in the School.<br>
+      - Best BaseBall Player in 2016.<br><br>
+  </p>
+  </div>
+  
+  <div class="column" >
+    <h3>&#128218; Ho&#235;rskool Vorentoe High School [2017 - 2021].</h3>
+  <h4></h4>
+  <p>
+      <h5>Grade 8</h5>
+      - Second Highest Learner in History & Geography.<br>
+      - Third Highest Learner in Techonology and Creative Arts.<br><br>
+      <h5>Grade 9</h5>
+      - Archievement in Musical Performance, Rugby U/15 & The Junior Debate Team.<br>
+      - Top Archiever in Creative Arts.<br>
+      - Second Highest Learner in Life Orientation.<br><br>
+      <h5>Grade 10</h5>
+      - Archivement in Rugby U/16(Scroll Archievement).<br>
+      - School Representation in North West at the South African Schools Rugby Leagues.<br><br>
+      <h5>Grade 11</h5>
+      - Elected as the member of the Representation Council of Learners(RCL).<br><br>
+      <h5>Grade 12</h5>
+      - Member of the RCL.<br>
+      - Second Highest Learner in Life Orientation.<br>
+      - Third Highest Learner in Mathematical Literacy.<br>
+      - Obtained a Bachelor Pass and a Distinction in Mathematical Literacy at the end of Matric.
+  </p>
+  </div>
+</div>
+
+<script>
+   function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      padding: 5% 5%;
+      float: left;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .column h5 {
+    text-decoration: underline;
+    font-size: 15px;
+    }
+    .column h4{
+    margin-left: none;
+    margin-right: 60%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: skyblue;
+    }
+   
+    @media screen and (max-width: 100%) {
+      .column {
+        width: 100%;
+      }
+    }
+    
+    @media screen and (min-width: 100%) {
+      .column {
+        width: 100%;
+      }
+    }
+</style>
+</body>
+</html>

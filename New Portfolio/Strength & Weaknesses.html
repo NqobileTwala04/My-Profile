@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Styles.CSS">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="Home Page.html" class="w3-bar-item w3-button">Home Page</a>
+  <a href="Personal Details.html" class="w3-bar-item w3-button">Personal Details</a>
+  <a href="Education.html" class="w3-bar-item w3-button">School Archievements</a>
+  <a href="Skills & Interests.html" class="w3-bar-item w3-button">Skills & Interests</a>
+  <a href="Hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<div class="profile">
+    <h3>Strengths</h3>
+    <h4></h4>
+    <p>
+        Quick leaner and passionate about working.
+        Good grasping ability and hard worker.
+    </p>
+</div>
+<div class="profile">
+    <h3>Weaknesses</h3>
+    <h4></h4>
+    <p>
+        Easily gets under pressure.<br>
+        Communication.
+    </p>
+</div>
+
+<script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+</script>
+
+<style>
+
+  @media (min-width: 100%) {
+   h1 {
+     font-size: 1.25rem;
+   }
+ }
+ @media (min-width: 100%) {
+   h1 {
+     font-size: 1.25rem;
+     line-height: 1.5;
+   }
+ }
+</style>
+
+    </body>
+    </html>
